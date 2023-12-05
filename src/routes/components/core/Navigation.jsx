@@ -2,18 +2,18 @@
 const Navbar = () => {
 
   return (
-    <header className={`flex w-full items-center bg-white dark:bg-dark`}>
+    <header className={`flex w-full justify-evenly bg-white dark:bg-dark`}>
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-4">
             <a href="/#" className="block w-full py-5">
               <img
-                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
+                src="./logo-icon.svg"
                 alt="logo"
                 className="dark:hidden"
               />
               <img
-                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
+                src="./logo-icon.svg"
                 alt="logo"
                 className="hidden dark:block"
               />
@@ -49,14 +49,14 @@ const Navbar = () => {
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
               <a
                 href="/#"
-                className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-white"
+                className="px-7 py-3 text-base font-medium text-dark hover:text-primary dark:text-black"
               >
                 Sign in
               </a>
 
               <a
                 href="/#"
-                className="rounded-md bg-primary px-7 py-3 text-base font-medium text-white hover:bg-primary/90"
+                className="rounded-md bg-primary px-7 py-3 text-base font-medium text-black hover:bg-primary/90"
               >
                 Sign Up
               </a>

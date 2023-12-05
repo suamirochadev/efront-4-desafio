@@ -3,7 +3,6 @@
 
 const Formulario = () => {
   return (
-    
     <section>
       <div className='bg-[#F7FAFC] flex flex-row items-center justify-between h-[902px] w-full'>
         <div className='flex items-center justify-center w-full'>

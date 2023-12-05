@@ -3,54 +3,30 @@
   const Footer = () => {
     return (
       <>
-        <footer className="relative z-10 bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-          <div className="container">
-            <div className="-mx-4 flex flex-wrap">
+        <footer className="relative z-10 bg-green-600  pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+          <div className=" flex items-center justify-between w-full">
+            <div className="mx-4 flex flex-wrap w-full justify-between">
               <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
                 <div className="mb-10 w-full">
-                  <a href="/#" className="mb-6 inline-block max-w-[160px]">
+                  <a href="/#" className="mb-6  max-w-[100px]">
                     <img
-                      src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo.svg"
+                      src="./auth-icon.svg"
                       alt="logo"
-                      className="max-w-full dark:hidden"
+                      className=" dark:hidden w-[50px] h-[50px]"
                     />
                     <img
-                      src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
+                      src="./auth-icon.svg"
                       alt="logo"
-                      className="max-w-full hidden dark:block"
+                      className=" hidden dark:block w-[100px] h-[100px]"
                     />
                   </a>
-                  <p className="mb-7 text-base text-body-color dark:text-dark-6">
-                    Sed ut perspiciatis undmnis is iste natus error sit amet
-                    voluptatem totam rem aperiam.
-                  </p>
-                  <p className="flex items-center text-sm font-medium text-dark dark:text-white">
-                    <span className="mr-3 text-primary">
-                      
-                    </span>
-                    <span>+012 (345) 678 99</span>
+                  <p className="mb-7 text-base text-body-color font-medium dark:text-dark-6">
+                    Desenvolvido por <a className="text-white" href="http://suamirocha.com.br" target="_blank" rel="noopener noreferrer">Suami Rocha 🤍</a>. 
+                    Desafio 4 - Login Page
+                    Codelândia é uma comunidade que te ajuda a aprender mais por meio de desafios.
                   </p>
                 </div>
               </div>
-  
-              <LinkGroup header="Resources">
-                <NavLink link="/#" label="SaaS Development" />
-                <NavLink link="/#" label="Our Products" />
-                <NavLink link="/#" label="User Flow" />
-                <NavLink link="/#" label="User Strategy" />
-              </LinkGroup>
-              <LinkGroup header="Company">
-                <NavLink link="/#" label="About TailGrids" />
-                <NavLink link="/#" label="Contact & Support" />
-                <NavLink link="/#" label="Success History" />
-                <NavLink link="/#" label="Setting & Privacy" />
-              </LinkGroup>
-              <LinkGroup header="Quick Links">
-                <NavLink link="/#" label="Premium Support" />
-                <NavLink link="/#" label="Our Services" />
-                <NavLink link="/#" label="Know Our Team" />
-                <NavLink link="/#" label="Download App" />
-              </LinkGroup>
   
               <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
                 <div className="mb-10 w-full">
@@ -59,7 +35,7 @@
                   </h4>
                   <div className="mb-6 flex items-center">
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                     >
                       <svg
@@ -72,7 +48,7 @@
                       </svg>
                     </a>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                     >
                       <svg
@@ -85,7 +61,7 @@
                       </svg>
                     </a>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                     >
                       <svg
@@ -98,7 +74,7 @@
                       </svg>
                     </a>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white dark:border-dark-3 dark:text-white dark:hover:border-primary sm:mr-4 lg:mr-3 xl:mr-4"
                     >
                       <svg
@@ -112,7 +88,7 @@
                     </a>
                   </div>
                   <p className="text-base text-body-color dark:text-dark-6">
-                    &copy; 2025 TailGrids
+                    &copy; 2023 Suami Rocha ⭐
                   </p>
                 </div>
               </div>
@@ -180,31 +156,4 @@
   };
   
   export default Footer;
-  
-  const LinkGroup = () => {
-    return (
-      <>
-        <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-          <div className="mb-10 w-full">
-            <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
-              
-            </h4>
-            <ul className="space-y-3"></ul>
-          </div>
-        </div>
-      </>
-    );
-  };
-  
-  const NavLink = () => {
-    return (
-      <li>
-        <a
-          href={''}
-          className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
-        >
-          {''}
-        </a>
-      </li>
-    );
-  };
+
