@@ -4,10 +4,10 @@ function App() {
   return (
     <>
     <main className="flex items-center">
-      <section className="bg-[#F7FAFC] flex items-center justify-center w-full h-[902px]">
+      <section className="bg-[#F7FAFC] flex items-center justify-center w-full h-[902px] max-sm:hidden">
         <img src="./bg-img.png" alt="" />
       </section>
-      <div className="flex flex-col items-center justify-center h-[902px] w-full bg-white">
+      <div className="flex flex-col items-center justify-center  w-full bg-white">
         <div>
             <div className="py-10">
               <h2 className="font-serif text-base color-[#1A202C]">Bem vindo de volta</h2>
@@ -19,16 +19,16 @@ function App() {
             <form action="" method="get">
               <div className="w-full h-[50px] flex flex-col mb-5">
                 <label htmlFor="email" className="font-sans text-base color-[#1A202C]">Email</label>
-                <input type="email" name="email" id="email" placeholder="codelandia@gmail.com" className="py-4 pl-5 border-[#E8E8E8] border focus:border-[#E8E8E8] outline-[#E8E8E8] w-full"  required />
+                <input type="email" name="email" id="email" placeholder="codelandia@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" className="py-4 pl-5 border-[#E8E8E8] border focus:border-[#E8E8E8] outline-[#E8E8E8] w-full"  required />
               </div>
               <div className="my-10 w-full h-[50px] flex flex-col mb-5">
                 <label htmlFor="password" className="font-sans text-base color-[#1A202C]">Senha</label>
-                <input type="password" name="password" id="password" className="py-4 pl-5 rounded-lg border-[#E8E8E8] border focus:border-[#E8E8E8] outline-[#E8E8E8] w-full" placeholder="*********" required />
+                <input type="password" name="password" id="password" pattern=".{8,}" title="Digite oito ou mais caracteres." className="py-4 pl-5 rounded-lg border-[#E8E8E8] border focus:border-[#E8E8E8] outline-[#E8E8E8] w-full" placeholder="*********" required />
               </div>
               <div className="my-10 flex flex-wrap items-center justify-between gap-3 mb-5" >
                 <div className="flex gap-3">
-                  <input type="radio" name="option1"/>
-                  <label htmlFor="radio">Lembrar de mim </label>
+                  <input type="checkbox" name="option1" id="checkbox" />
+                  <label htmlFor="checkbox">Lembrar de mim </label>
                 </div>
                 <a href="#" className="text-base font-sans text-[#2B6CB0]">Esqueceu sua senha?</a>
               </div>
